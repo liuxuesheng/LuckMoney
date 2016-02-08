@@ -1,10 +1,12 @@
 package com.bb.luckmoney;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
 
-public class Splash extends AppCompatActivity {
+public class Splash extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,7 @@ public class Splash extends AppCompatActivity {
                     e.printStackTrace();
                 } finally {
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    overridePendingTransition(0, 0);
                     finish();
                 }
             }
