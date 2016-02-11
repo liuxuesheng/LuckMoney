@@ -16,7 +16,7 @@ public class Splash extends Activity {
         Thread splash_screen = new Thread() {
             public void run() {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
